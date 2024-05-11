@@ -65,8 +65,6 @@ p {
     button{
         background-color: #4DADE1;
         border: none;
-        }
-    .Portada button {
         color: #ffffff;
         font-family: "Overpass Mono", monospace;
         font-size: 1.1em;
@@ -76,7 +74,8 @@ p {
         align-items: center;
         width: 100%;
         height: 6vh;
-    }
+        }
+ 
     .Parrafos {
         margin-left: 10%;
         margin-right: 10%;
@@ -147,9 +146,17 @@ p {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 1em;
         padding-top: 5%;
         padding-bottom: 5%;
+    }
+    .Bullets h1{
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+    .Bullets h4{
+        font-family:"EB Garamond", serif;
+        font-size: 1.2em;
+        font-weight: 500;
     }
     .formulario {
         display: flex;
@@ -178,20 +185,26 @@ p {
     }
 
     .formulario input{
+        width: 98.5%;
         border: none;
         border-bottom: 1px solid white;
         background-color: transparent;
         color: white;
-        font-size: 16px;
+        font-size: 1em;
     }
     .formulario select{
-
+        width: 100%;
         background-color: transparent;
         color: white;
         border: none;
         border-bottom: 1px solid white;
+        font-size: 1em;
     }
     .formulario option{
         background-color: #F2FBFF;
         color: #1d1d1d;
+        font-size: 0.8em;
+    }
+    input::placeholder {
+        color: white;
     }
