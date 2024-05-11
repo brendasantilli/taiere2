@@ -69,6 +69,8 @@ p {
     button{
         background-color: #4DADE1;
         border: none;
+        }
+    .Portada button {
         color: #ffffff;
         font-family: "Overpass Mono", monospace;
         font-size: 1.1em;
@@ -78,7 +80,7 @@ p {
         align-items: center;
         width: 100%;
         height: 6vh;
-        }
+    }
     .Parrafos {
         margin-left: 10%;
         margin-right: 10%;
