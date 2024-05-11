@@ -73,7 +73,7 @@ p {
         }
     .Portada h2 {
         font-family: "EB Garamond", serif; 
-        font-size: 1em;
+        font-size: 1.3em;
         font-weight: 400;
         }
 
@@ -108,7 +108,23 @@ p {
         background-position: center;
         background-repeat: no-repeat;
     }
+    .negrita {
+        font-weight: bold;
+    }
+    .negritaM{
+        font-weight: bold;
+        color:#F61A77;
 
+    }
+    .negritaR{
+        font-weight: bold;
+        color:#F61A77;
+
+    }
+    .negritaC{
+        font-weight: bold;
+        color:#06C4F1;
+    }
     .Parrafos img{
         width: 10vh;
         height: 100%;
@@ -132,6 +148,10 @@ p {
     }
     .Parrafos h3{
         padding: 1em;
+        font-family:"EB Garamond", serif;
+        font-size: 1.6em;
+        font-weight: 500; /* Peso de la fuente: medium */
+        font-style: italic;
         text-align: center;
         background-color: white;
     }
