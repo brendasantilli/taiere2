@@ -139,19 +139,6 @@ p {
         text-align: center;
         background-color: white;
     }
-    .formulario {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 40vh;
-        margin-left: 10%;
-        margin-right: 0%;
-        padding: 10%;
-        background-color: #1d1d1d;
-        color: white;
-        border-top-left-radius: 10%;
-        border-bottom-left-radius:10%;
-    }
     .Bullets {
         margin-left: 10%;
         margin-right: 10%;
@@ -164,6 +151,19 @@ p {
         padding-top: 5%;
         padding-bottom: 5%;
     }
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 50vh;
+        margin-left: 10%;
+        margin-right: 0%;
+        padding: 10%;
+        background-color: #1d1d1d;
+        color: white;
+        border-top-left-radius: 2em;
+        border-bottom-left-radius:2em;
+    }
     .formulario h1{
         color: #FF4F44;
         font-size: 2 em;
@@ -173,8 +173,25 @@ p {
         margin: 0;
     }
     .formulario label{
+        display: none;
         font-size: 1.1em;
     }
-    .formulario button{
-        height: 6vh;
+
+    .formulario input{
+        border: none;
+        border-bottom: 1px solid white;
+        background-color: transparent;
+        color: white;
+        font-size: 16px;
+    }
+    .formulario select{
+
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-bottom: 1px solid white;
+    }
+    .formulario option{
+        background-color: #F2FBFF;
+        color: #1d1d1d;
     }
