@@ -104,7 +104,7 @@ p {
     }
     .negritaR{
         font-weight: bold;
-        color:#F61A77;
+        color:#FE5325;
     }
     .negritaC{
         font-weight: bold;
@@ -182,8 +182,8 @@ p {
         font-weight: bold;
     }
     .Bullets h4{
-        font-family:"EB Garamond", serif;
-        font-size: 1.2em;
+        font-family:"Overpass Mono", monospace;
+        font-size: 1em;
         font-weight: 500;
     }
     .formulario {
@@ -368,6 +368,10 @@ footer p{
     font-size: 0.7em;
     font-family: "Overpass Mono", monospace;
     
+}
+
+footer h6{
+    text-align: center;
 }
 
 footer h6{
