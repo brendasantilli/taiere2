@@ -8,23 +8,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
+    
     <div class="Pagina principal">
     <header>
         <div class="logoynombre"> 
             <h4>EL GATO <br>Y LA CAJA</h4>
-            <img src="img/logo.png" alt="logo">
+            <svg class="Header_logo" xmlns="http://www.w3.org/2000/svg" width="68" height="137" viewBox="0 0 68 137" fill="none"><g clip-path="url(#clip0_8036_3734)"><path d="M46.8927 6.74552L54.1386 10.8953C54.7364 11.2398 55.4796 10.8072 55.4796 10.1263V0.88931C55.4796 0.168299 54.6556 -0.256296 54.0659 0.160288L46.82 5.24742C46.2869 5.62395 46.3192 6.41706 46.8927 6.74552Z" fill="#1F1F1F"></path><path d="M14.4352 10.8952L21.6811 6.7454C22.2465 6.42495 22.2869 5.62382 21.7538 5.2473L14.5079 0.168177C13.9182 -0.248406 13.0942 0.168177 13.0942 0.897199V10.1341C13.0942 10.8151 13.8374 11.2477 14.4352 10.9032V10.8952Z" fill="#1F1F1F"></path><path d="M65.8268 78.0213L25.8734 55.1413V50.1423L31.9803 53.6432C32.6023 53.9957 33.297 54.1799 33.9917 54.1799C34.6864 54.1799 35.3811 54.0037 36.0031 53.6432L54.1784 43.2366C55.4224 42.5236 56.1898 41.2098 56.1898 39.7838V18.9706C56.1898 17.5446 55.4224 16.2308 54.1784 15.5178L36.0031 5.11117C34.7591 4.39817 33.2243 4.39817 31.9803 5.11117L13.805 15.5178C12.561 16.2308 11.7936 17.5446 11.7936 18.9706V39.7838C11.7936 41.2098 12.561 42.5236 13.805 43.2366L17.2058 45.1833V57.6248C17.2058 59.1629 18.0297 60.5809 19.3706 61.35L59.3241 84.23V113.239L33.9917 127.747L8.65932 113.239V84.23L19.6776 77.9012C20.7439 77.2923 20.7439 75.7702 19.6776 75.1613L14.5724 72.2372C13.8534 71.8287 12.9729 71.8287 12.254 72.2372L4.00643 76.9639L2.15658 78.0213C0.815648 78.7904 -0.00830078 80.2084 -0.00830078 81.7466V115.722C-0.00830078 117.26 0.815648 118.678 2.15658 119.447L31.8187 136.431C32.4892 136.816 33.2405 137.008 33.9836 137.008C34.7268 137.008 35.478 136.816 36.1485 136.431L65.8107 119.447C67.1516 118.678 67.9755 117.26 67.9755 115.722V81.7466C67.9755 80.2084 67.1516 78.7904 65.8107 78.0213H65.8268ZM19.8472 21.2778L33.9998 13.1785L48.1523 21.2778V37.4845L33.9998 45.5839L19.8472 37.4845V21.2778Z" fill="#1F1F1F"></path></g><defs><clipPath id="clip0_8036_3734"><rect width="68" height="137" fill="white"></rect></clipPath></defs></svg>
             <H4>CIENCIA <br>+DISEÑO</H4>
         </div>
         <div class="Portada" id="portada">
         <img src="img/header.png" alt="gatos, /experimenta y numeritos">
 
         <div class="titulos">
-            <h1>Sumate al equipo<br>de /Gato_Testers</h1>
+            <h1>Sumate al equipo<br>de <span class="destacado">/Gato_Testers</span></h1>
             <h2>Testeá nuestros experimentos <span class= "negrita">de manera exclusiva</span> antes de que sean publicados.</h2></div>
-        <button>QUIERO SER GATO_TESTER</button>
-    </div>
+            <button id="boton_portada" href="#formulario">QUIERO SER GATO_TESTER</button>
+        </div>
     </header>
 
     <main>
@@ -41,17 +44,20 @@
             <h5>/Entender el mundo</h5>
         </div>
         <section class="Bullets" id="bullets">
-            <h1>¿Cómo ser Gato_Tester?</h1>
+            <div class="bullet_titulo">
+                <h1>¿Cómo ser Gato_Tester?</h1>
+                <img src="img/gato3.png" alt="">
+            </div>
             <div class="bulletizq">
-                <img src="img/lineabu.png" alt="linea bullet izquierda">
+                <span class="banderita_izq">01</span>
            <h4><span class= "negrita">Completá el formulario</span> para que<br>podamos conocerte mejor.</h4>
             </div>
             <div class="bulletder">
            <h4><span class= "negrita">Revisá tu mail</span>, para encontrar<br>tu primer prototipo.</h4>
-           <img src="img/lineabu.png" alt="linea bullet derecha">
+           <span class="banderita_der">02</span>
             </div>
             <div class="bulletizq">
-                <img src="img/lineabu.png" alt="linea bullet izquierda">
+                <span class="banderita_izq">03</span>
            <h4><span class= "negrita">Dejanos tus opiniones</span> cuando <br> termines el experimento.</h4>
             </div>
         </section>
