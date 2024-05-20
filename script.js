@@ -5,10 +5,6 @@ var input_mail = document.getElementById("campo_mail");
 var input_tematica = document.getElementById("elegir_tematica");
 var boton = document.getElementById("boton_form");
 
-
-console.log(input_nombre);
-
-
 boton.addEventListener("click", enviarFormulario);
 
 function enviarFormulario (event){
@@ -44,3 +40,6 @@ function enviarFormulario (event){
     elemento_feedback = document.getElementById("divisor1");
     elemento_feedback.classList.add("oculto");   
 }
+        document.getElementById('boton_portada').addEventListener('click', function() {
+            document.getElementById('formulario').scrollIntoView({ behavior: 'smooth' });
+        });
