@@ -1,3 +1,4 @@
+/* Estilos generales */
 html {
     background-color: white;
     margin: 0%;
@@ -7,9 +8,9 @@ body {
 }
 h1 {
     font-family: "Montserrat", sans-serif;
-     color: #1d1d1d;
+    color: #1d1d1d;
 }
-h2{
+h2 {
     font-family: "EB Garamond", serif;
     color: #1d1d1d;
 }
@@ -17,12 +18,12 @@ h4 {
     font-family: "Overpass Mono", monospace;
     color: #1d1d1d;
 }
-h5{
+h5 {
     font-family: "Overpass Mono", monospace;
     color: #1d1d1d;
 }
 p {
-font-family: "EB Garamond", serif;
+    font-family: "EB Garamond", serif;
 }
 .logoynombre {
     margin-left: 10%;
@@ -33,11 +34,11 @@ font-family: "EB Garamond", serif;
     align-items: center;
     height: 10%;
 }
-.Header_logo{
+.Header_logo {
     height: 8vw;
     align-content: center;
-    }
-.header{
+}
+.header {
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -49,60 +50,57 @@ font-family: "EB Garamond", serif;
     padding: 0;
     margin-left: 10%;
     margin-right: 10%;
-    height: 70vh;
+    height: 80vh;
 }
-.Portada img{
-    height: 35%;
+.Portada img {
+    aspect-ratio: auto;
 }
 .titulos {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
+    width: auto;
+    
 }
-button{
+.boton_portada {
     background-color: #4DADE1;
     border: none;
     color: #ffffff;
     font-family: "Overpass Mono", monospace;
     font-size: 1.1em;
     font-weight: 500;
-    letter-spacing: 10%;
+    letter-spacing: 0.1em;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 12%;
+    height: 10%;
 }
 .titulos h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 3em;
+    font-size: 2.8em;
     font-weight: 800;
     line-height: 125%;
-
-    }
+}
 .titulos h2 {
-    font-family: "EB Garamond", serif; 
-    font-size: 1.5em;
+    font-family: "EB Garamond", serif;
+    font-size: 1.4em;
     font-weight: 600;
     line-height: 175%;
-    }
-
+}
 .destacado {
     position: relative;
 }
-
 .destacado::after {
     content: "";
     position: absolute;
-    bottom: 4px; 
+    bottom: 4px;
     left: 0;
     width: 100%;
-    height: 0.4em; 
-    background-color: #FA73AC; 
+    height: 0.4em;
+    background-color: #FA73AC;
     z-index: -1;
 }
-
 .Parrafos {
     margin-left: 10%;
     margin-right: 10%;
@@ -116,7 +114,6 @@ button{
     position: relative;
     z-index: 1;
 }
-
 .Parrafos::before {
     content: '';
     position: absolute;
@@ -128,7 +125,6 @@ button{
     background-color: #1d1d1d;
     z-index: -1;
 }
-
 .Parrafos::after {
     content: '';
     position: absolute;
@@ -142,7 +138,6 @@ button{
     border-top: 10px solid #1d1d1d;
     z-index: -1;
 }
-
 .Parrafos .diamond {
     position: absolute;
     top: 0;
@@ -153,21 +148,21 @@ button{
     background-color: #1d1d1d;
     z-index: -1;
 }
-.Parrafos img{
+.Parrafos img {
     width: 10vh;
     height: 100%;
 }
-.Parrafos h3{
-    padding: 1em;
-    font-family:"EB Garamond", serif;
+.Parrafos h3 {
+    padding: 0.5em;
+    font-family: "EB Garamond", serif;
     font-size: 2.2em;
     font-weight: 600;
     font-style: italic;
     text-align: center;
     background-color: white;
-    margin-top: 1.5em;
+    margin-top: 1em;
 }
-.Parrafos p{
+.Parrafos p {
     padding-top: 1em;
     padding-bottom: 1em;
     background-color: white;
@@ -177,17 +172,17 @@ button{
 .negrita {
     font-weight: bold;
 }
-.negritaM{
+.negritaM {
     font-weight: bold;
-    color:#F61A77;
+    color: #F61A77;
 }
-.negritaR{
+.negritaR {
     font-weight: bold;
-    color:#FE5325;
+    color: #FE5325;
 }
-.negritaC{
+.negritaC {
     font-weight: bold;
-    color:#06C4F1;
+    color: #06C4F1;
 }
 .divisor {
     margin-right: 10%;
@@ -197,14 +192,11 @@ button{
     justify-content: space-between;
     font-size: 0.7em;
 }
-
-
-.img-der{
+.img-der {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
-
 .Bullets {
     margin-left: 10%;
     margin-right: 10%;
@@ -216,7 +208,7 @@ button{
     padding-top: 5%;
     padding-bottom: 5%;
 }
-.bullet_titulo{
+.bullet_titulo {
     margin-bottom: 2vh;
     display: flex;
     flex-direction: row;
@@ -225,22 +217,22 @@ button{
     width: 80vw;
     font-size: 1.4em;
 }
-.bullet_titulo img{
+.bullet_titulo img {
     width: 20vw;
     max-width: 120px;
 }
-    .bulletizq::before,
-    .bulletder::after {
+.bulletizq::before,
+.bulletder::after {
     content: "";
     display: block;
     width: 0.2em;
     height: 5em;
-    background-color: #F61A77; /* Puedes cambiar el color según tus necesidades */
+    background-color: #F61A77;
     margin: 0;
 }
 .banderita_izq {
     display: inline-block;
-    background-color:#F61A77;
+    background-color: #F61A77;
     font-family: "Overpass Mono", monospace;
     color: white;
     padding: 0.2em 0.5em;
@@ -250,7 +242,7 @@ button{
 }
 .banderita_der {
     display: inline-block;
-    background-color:#F61A77;
+    background-color: #F61A77;
     font-family: "Overpass Mono", monospace;
     color: white;
     padding: 0.2em 0.5em;
@@ -258,55 +250,54 @@ button{
     margin-right: -0.2em;
     align-self: flex-end;
 }
-.bulletizq{
-        margin-top: 4vh;
-        margin-bottom: 4vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        font-size: 1em;
+.bulletizq {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1em;
 }
-
-.bulletder{
-        margin-top: 4vh;
-        margin-bottom: 4vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;  
-        align-items: center;
-        font-size: 1em;
+.bulletder {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1em;
 }
-.Bullets h1{
-        font-size: 1.6em;
-        font-weight: bold;
+.Bullets h1 {
+    font-size: 1.6em;
+    font-weight: bold;
 }
-.Bullets h4{
-        font-family:"Overpass Mono", monospace;
-        font-size: 1em;
-        font-weight: 500;
-        margin-left: -1em;
-        margin-bottom: 2em;
-        margin-right: -1em;
+.Bullets h4 {
+    font-family: "Overpass Mono", monospace;
+    font-size: 1em;
+    font-weight: 500;
+    margin-left: -1em;
+    margin-bottom: 2em;
+    margin-right: -1em;
 }
 .formulario {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 50vh;
-        margin-left: 10%;
-        margin-right: 0%;
-        padding: 10%;
-        background-color: #1d1d1d;
-        color: white;
-        border-top-left-radius: 2em;
-        border-bottom-left-radius:2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50vh;
+    margin-left: 10%;
+    margin-right: 0%;
+    padding: 10%;
+    background-color: #1d1d1d;
+    color: white;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
 }
-.opciones_box{
+.opciones_box {
     margin-top: 2em;
     margin-bottom: 2em;
 }
-.formulario h1{
+.formulario h1 {
     color: #FF4F44;
     font-size: 2 em;
     margin: 0;
@@ -315,11 +306,11 @@ button{
     font-size: 0.9em;
     margin: 0;
 }
-.formulario label{
+.formulario label {
     display: none;
     font-size: 1.1em;
 }
-.formulario input{
+.formulario input {
     width: 98.5%;
     border: none;
     border-bottom: 1px solid white;
@@ -327,7 +318,7 @@ button{
     color: white;
     font-size: 1em;
 }
-.formulario select{
+.formulario select {
     width: 100%;
     background-color: transparent;
     color: white;
@@ -335,7 +326,7 @@ button{
     border-bottom: 1px solid white;
     font-size: 1em;
 }
-.formulario option{
+.formulario option {
     background-color: #F2FBFF;
     color: #1d1d1d;
     font-size: 0.8em;
@@ -348,64 +339,63 @@ input::placeholder {
     flex-direction: column;
     justify-content: space-between;
     padding-top: 20%;
-    
 }
-.textoimg{
+.textoimg {
     display: flex;
     flex-direction: row;
     margin-left: 10%;
     margin-right: 10%;
 }
-.texto{
+.texto {
     display: flex;
     flex-direction: column;
 }
-.texto h1{
+.texto h1 {
     font-size: 1.5;
     font-weight: 800;
     margin: 0;
 }
-.texto h4{
+.texto h4 {
     font-size: 1em;
-    font-family:"EB Garamond", serif;
+    font-family: "EB Garamond", serif;
     font-weight: 500;
 }
-.carousel{
+.carousel {
     width: 100%;
-    overflow-x: auto; 
+    overflow-x: auto;
     white-space: nowrap;
 }
-.carousel-inner{
-    display: inline-flex; 
-    }
-.carousel-item{
+.carousel-inner {
+    display: inline-flex;
+}
+.carousel-item {
     height: 10%;
     width: 200px;
-    margin:20px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #C54930;
     border-radius: 10%;
-    color: white    ;
+    color: white;
     overflow: hidden;
 }
-.testimonio{
+.testimonio {
     font-weight: 400;
-    margin: 10px; 
-    white-space: normal; /* Permite que el texto se envuelva a la siguiente línea según sea necesario */
+    margin: 10px;
+    white-space: normal;
     overflow: visible;
 }
-.usuario{
+.usuario {
     margin-left: 10px;
-    font-family:"Overpass Mono", monospace;
+    font-family: "Overpass Mono", monospace;
     font-weight: 700;
     font-size: 0.6em;
 }
 .oculto {
     display: none !important;
 }
-.Feedback{
+.Feedback {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -417,26 +407,25 @@ input::placeholder {
     margin-right: 10%;
     padding-top: 35%;
 }
-.Feedback h1{
+.Feedback h1 {
     margin: 0;
-    line-height: 125%;    
+    line-height: 125%;
     font-size: 2em;
     font-weight: 800;
 }
-.Feedback h2{
-    line-height: 125%;    
-    font-size:1.2em;
-    font-weight:500;
+.Feedback h2 {
+    line-height: 125%;
+    font-size: 1.2em;
+    font-weight: 500;
 }
 .divisor2 {
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
     font-size: 0.7em;
 }
-.divisor2 h5{
+.divisor2 h5 {
     display: flex;
     margin: 0;
     justify-content: flex-start;
@@ -450,28 +439,480 @@ footer {
     flex-direction: column;
     padding-left: 10%;
     padding-right: 10%;
-
     justify-content: space-between;
 }
-
 .links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: 0.8em;
 }
-footer p{
+footer p {
     margin-bottom: 0;
     text-align: center;
     font-size: 0.7em;
     font-family: "Overpass Mono", monospace;
-    
 }
-
-footer h6{
+footer h6 {
     text-align: center;
 }
 
-footer h6{
-    text-align: center;
+/* Media query para pantallas menores a 1000px */
+@media (min-width: 1024px) {
+    html {
+        background-color: white;
+        margin: 0%;
+    }
+    body {
+        margin: 0;
+    }
+    h1 {
+        font-family: "Montserrat", sans-serif;
+        color: #1d1d1d;
+    }
+    h2 {
+        font-family: "EB Garamond", serif;
+        color: #1d1d1d;
+    }
+    h4 {
+        font-family: "Overpass Mono", monospace;
+        color: #1d1d1d;
+    }
+    h5 {
+        font-family: "Overpass Mono", monospace;
+        color: #1d1d1d;
+    }
+    p {
+        font-family: "EB Garamond", serif;
+    }
+    .logoynombre {
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 10%;
+    }
+    .Header_logo {
+        height: 8vw;
+        align-content: center;
+    }
+    .header {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .Portada {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 70vh;
+    }
+    .Portada img {
+        height: 35%;
+    }
+    .titulos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    button {
+        background-color: #4DADE1;
+        border: none;
+        color: #ffffff;
+        font-family: "Overpass Mono", monospace;
+        font-size: 1.1em;
+        font-weight: 500;
+        letter-spacing: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 12%;
+    }
+    .titulos h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 3em;
+        font-weight: 800;
+        line-height: 125%;
+    }
+    .titulos h2 {
+        font-family: "EB Garamond", serif;
+        font-size: 1.5em;
+        font-weight: 600;
+        line-height: 175%;
+    }
+    .destacado {
+        position: relative;
+    }
+    .destacado::after {
+        content: "";
+        position: absolute;
+        bottom: 4px;
+        left: 0;
+        width: 100%;
+        height: 0.4em;
+        background-color: #FA73AC;
+        z-index: -1;
+    }
+    .Parrafos {
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1em;
+        padding-bottom: 5%;
+        position: relative;
+        z-index: 1;
+    }
+    .Parrafos::before {
+        content: '';
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        background-color: #1d1d1d;
+        z-index: -1;
+    }
+    .Parrafos::after {
+        content: '';
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #1d1d1d;
+        z-index: -1;
+    }
+    .Parrafos .diamond {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        width: 0.8em;
+        height: 0.8em;
+        background-color: #1d1d1d;
+        z-index: -1;
+    }
+    .Parrafos img {
+        width: 10vh;
+        height: 100%;
+    }
+    .Parrafos h3 {
+        padding: 1em;
+        font-family: "EB Garamond", serif;
+        font-size: 2.2em;
+        font-weight: 600;
+        font-style: italic;
+        text-align: center;
+        background-color: white;
+        margin-top: 1.5em;
+    }
+    .Parrafos p {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        background-color: white;
+        font-size: 1.2em;
+        line-height: 200%;
+    }
+    .negrita {
+        font-weight: bold;
+    }
+    .negritaM {
+        font-weight: bold;
+        color: #F61A77;
+    }
+    .negritaR {
+        font-weight: bold;
+        color: #FE5325;
+    }
+    .negritaC {
+        font-weight: bold;
+        color: #06C4F1;
+    }
+    .divisor {
+        margin-right: 10%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.7em;
+    }
+    .img-der {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .Bullets {
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .bullet_titulo {
+        margin-bottom: 2vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 80vw;
+        font-size: 1.4em;
+    }
+    .bullet_titulo img {
+        width: 20vw;
+        max-width: 120px;
+    }
+    .bulletizq::before,
+    .bulletder::after {
+        content: "";
+        display: block;
+        width: 0.2em;
+        height: 5em;
+        background-color: #F61A77;
+        margin: 0;
+    }
+    .banderita_izq {
+        display: inline-block;
+        background-color: #F61A77;
+        font-family: "Overpass Mono", monospace;
+        color: white;
+        padding: 0.2em 0.5em;
+        margin-top: 0;
+        margin-left: -0.2em;
+        align-self: flex-end;
+    }
+    .banderita_der {
+        display: inline-block;
+        background-color: #F61A77;
+        font-family: "Overpass Mono", monospace;
+        color: white;
+        padding: 0.2em 0.5em;
+        margin-top: 0;
+        margin-right: -0.2em;
+        align-self: flex-end;
+    }
+    .bulletizq {
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1em;
+    }
+    .bulletder {
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 1em;
+    }
+    .Bullets h1 {
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+    .Bullets h4 {
+        font-family: "Overpass Mono", monospace;
+        font-size: 1em;
+        font-weight: 500;
+        margin-left: -1em;
+        margin-bottom: 2em;
+        margin-right: -1em;
+    }
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 50vh;
+        margin-left: 10%;
+        margin-right: 0%;
+        padding: 10%;
+        background-color: #1d1d1d;
+        color: white;
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+    }
+    .opciones_box {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .formulario h1 {
+        color: #FF4F44;
+        font-size: 2em;
+        margin: 0;
+    }
+    .supporting-text {
+        font-size: 0.9em;
+        margin: 0;
+    }
+    .formulario label {
+        display: none;
+        font-size: 1.1em;
+    }
+    .formulario input {
+        width: 98.5%;
+        border: none;
+        border-bottom: 1px solid white;
+        background-color: transparent;
+        color: white;
+        font-size: 1em;
+    }
+    .formulario select {
+        width: 100%;
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-bottom: 1px solid white;
+        font-size: 1em;
+    }
+    .formulario option {
+        background-color: #F2FBFF;
+        color: #1d1d1d;
+        font-size: 0.8em;
+    }
+    input::placeholder {
+        color: white;
+    }
+    .Testers {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 20%;
+    }
+    .textoimg {
+        display: flex;
+        flex-direction: row;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .texto {
+        display: flex;
+        flex-direction: column;
+    }
+    .texto h1 {
+        font-size: 1.5;
+        font-weight: 800;
+        margin: 0;
+    }
+    .texto h4 {
+        font-size: 1em;
+        font-family: "EB Garamond", serif;
+        font-weight: 500;
+    }
+    .carousel {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .carousel-inner {
+        display: inline-flex;
+    }
+    .carousel-item {
+        height: 10%;
+        width: 200px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #C54930;
+        border-radius: 10%;
+        color: white;
+        overflow: hidden;
+    }
+    .testimonio {
+        font-weight: 400;
+        margin: 10px;
+        white-space: normal;
+        overflow: visible;
+    }
+    .usuario {
+        margin-left: 10px;
+        font-family: "Overpass Mono", monospace;
+        font-weight: 700;
+        font-size: 0.6em;
+    }
+    .oculto {
+        display: none !important;
+    }
+    .Feedback {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url('img/background_feedback.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 35%;
+    }
+    .Feedback h1 {
+        margin: 0;
+        line-height: 125%;
+        font-size: 2em;
+        font-weight: 800;
+    }
+    .Feedback h2 {
+        line-height: 125%;
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+    .divisor2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-size: 0.7em;
+    }
+    .divisor2 h5 {
+        display: flex;
+        margin: 0;
+        justify-content: flex-start;
+        transform: rotate(-90deg);
+        padding-left: 9%;
+    }
+    footer {
+        background-color: #030712;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10%;
+        padding-right: 10%;
+        justify-content: space-between;
+    }
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.8em;
+    }
+    footer p {
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 0.7em;
+        font-family: "Overpass Mono", monospace;
+    }
+    footer h6 {
+        text-align: center;
+    }
 }
+
