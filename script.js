@@ -14,13 +14,16 @@ function enviarFormulario(event) {
 
   placeholder_nombre.innerHTML = valor_nombre;
 
-  elemento_feedback = document.getElementById("feedback");
+  elemento_feedback = document.getElementById("agradecimiento");
   elemento_feedback.classList.remove("oculto");
 
   elemento_feedback = document.getElementById("portada");
   elemento_feedback.classList.add("oculto");
 
   elemento_feedback = document.getElementById("parrafos");
+  elemento_feedback.classList.add("oculto");
+
+  elemento_feedback = document.getElementById("parrafos_web");
   elemento_feedback.classList.add("oculto");
 
   elemento_feedback = document.getElementById("bullets");

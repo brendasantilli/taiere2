@@ -57,9 +57,11 @@ h5 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
-
+  align-items: flex-start;
   height: 80vh;
+}
+.Portada h4 {
+  opacity: 50%;
 }
 .titulos {
   display: flex;
@@ -230,6 +232,75 @@ h5 {
 #parrafos_web {
   display: none;
 }
+
+footer {
+  display: grid;
+  grid-template-columns: 33vw 33vw 33vw;
+  grid-template-rows: 8vh 8vh;
+  height: 16vh;
+  background-color: #030712;
+  color: #ffffff;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: center;
+}
+
+.links {
+  grid-row: 1;
+  grid-column: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  font-size: 0.8em;
+  margin: 1em;
+}
+.links a {
+  color: white;
+}
+.redes {
+  grid-row: 2;
+  grid-column: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  image-resolution: auto;
+}
+.redes img {
+  height: 2em;
+}
+footer h4 {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1em;
+  font-family: "Overpass Mono", monospace;
+  color: white;
+  opacity: 75%;
+  grid-column: 3;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+footer h5 {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1em;
+  font-family: "Overpass Mono", monospace;
+  color: white;
+  opacity: 75%;
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
 @media (max-width: 1024px) {
   .Bullets {
     background-image: url("img/bg_bullets_mobile.png");
@@ -363,12 +434,16 @@ form {
   justify-content: flex-end;
   height: auto;
 }
+.titulo_formulario_web {
+  display: none;
+}
 
 .formulario h1 {
   color: white;
   font-size: 200%;
   margin: 0;
   text-align: right;
+  width: 100%;
 }
 .formulario input {
   width: 98.5%;
@@ -546,33 +621,80 @@ input::placeholder {
   transform: rotate(-90deg);
   padding-left: 9%;
 }
-
-footer {
-  background-color: #030712;
-  color: #ffffff;
+#agradecimiento {
+  background-image: url("img/bg_agradecimiento_mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 66vh;
+  padding: 10%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+#agradecimiento h1 {
+  display: inline;
+  font-size: 2.4em;
+  font-family: "Montserrat", sans-serif;
+  color: #1d1d1d;
+  font-weight: 800;
+}
+#agradecimiento h2 {
+  font-size: 1.2em;
+}
+.contenido {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: center;
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 8vh 8vh;
+  height: 16vh;
+  background-color: #030712;
+  color: #ffffff;
   padding-left: 10%;
   padding-right: 10%;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .links {
+  grid-row: 2;
+  grid-column: 1;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
   font-size: 0.8em;
+  margin: 1em;
+}
+.links a {
+  color: white;
+}
+.redes {
+  grid-row: 1;
+  grid-column: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  image-resolution: auto;
+}
+.redes img {
+  height: 2em;
+}
+footer h4 {
+  display: none;
 }
 
-footer p {
-  margin-bottom: 0;
-  text-align: center;
-  font-size: 0.7em;
-  font-family: "Overpass Mono", monospace;
-}
-
-footer h6 {
-  text-align: center;
+footer h5 {
+  display: none;
 }
 
 @media (min-width: 1024px) {
@@ -999,16 +1121,18 @@ footer h6 {
     margin-left: 0%;
     margin-right: 0%;
     padding: 10%;
-    background-color: #b83d30;
     color: white;
     align-items: center;
+    background-image: url("img/bg_formulario_web.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   form {
     height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
+    width: 40%;
     align-items: center;
   }
 
@@ -1018,18 +1142,22 @@ footer h6 {
     width: 100%;
   }
   .titulo_formulario {
+    display: none;
+  }
+  .titulo_formulario_web {
     display: flex;
     justify-content: center;
-    width: 100%;
+
     align-items: center;
     height: auto;
   }
 
-  .formulario h1 {
+  .titulo_formulario_web h1 {
     color: white;
-    font-size: 200%;
+    font-size: 2.5em;
     margin: 0;
-    text-align: right;
+    width: 100%;
+    text-align: center;
   }
   .formulario input {
     width: 98.5%;
@@ -1038,7 +1166,7 @@ footer h6 {
     border-bottom: 1px solid white;
     background-color: transparent;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.4em;
     letter-spacing: 0.5px;
     font-weight: 500;
   }
@@ -1072,8 +1200,9 @@ footer h6 {
   }
   #boton_form {
     height: 12%;
-    width: 50%;
+    width: 40%;
     font-family: "Montserrat", sans-serif;
+    margin-top: 2em;
     font-weight: 800;
     letter-spacing: 5%;
     color: white;
@@ -1086,15 +1215,18 @@ footer h6 {
   }
 
   .Testers {
-    background-image: url("img/bg_testers_mobile.png");
+    background-image: url("img/bg_testers_web.png");
     background-repeat: no-repeat;
+    background-size: cover;
     padding-left: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 20%;
-    height: 90vh;
-    align-items: flex-start;
+    padding-right: 0;
+    padding-top: 10%;
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 12vh 50vh 20vh;
+    gap: 3em;
+    justify-items: center;
   }
 
   .texto {
@@ -1102,6 +1234,9 @@ footer h6 {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+    margin-bottom: 5%;
+    grid-row: 1;
+    grid-column: 1;
   }
 
   .texto h1 {
@@ -1120,6 +1255,12 @@ footer h6 {
 
   .carousel {
     width: 100%;
+    height: auto;
+    margin-bottom: 10%;
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    white-space: nowrap;
+    width: 100%;
     overflow-x: auto;
     white-space: nowrap;
   }
@@ -1129,12 +1270,13 @@ footer h6 {
   }
 
   .carousel-item {
-    height: 50vh;
-    width: 65vw;
+    height: 40vh;
+    width: 35vw;
     margin-right: 2em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-self: flex-end;
     background-color: #c54930;
     border-top-left-radius: 2.2em;
     border-top-right-radius: 2.2em;
@@ -1151,7 +1293,7 @@ footer h6 {
     white-space: normal;
     flex-direction: row;
     align-items: center;
-    gap: 1em;
+    gap: 0.5em;
   }
   .titulo_imagen img {
     width: 30%;
@@ -1174,19 +1316,22 @@ footer h6 {
     font-size: 1em;
     color: white;
   }
+
   .boton_feedback {
+    grid-row: 3;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 50%;
     background-color: #1d1d1d;
     border: none;
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
     font-size: 1em;
     font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10%;
-    width: 90%;
-    height: 8%;
+    margin-top: 0%;
   }
 
   .oculto {
@@ -1209,31 +1354,105 @@ footer h6 {
     padding-left: 9%;
   }
 
+  #agradecimiento {
+    background-image: url("img/bg_agradecimiento_web.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 33% 33% 33%;
+
+    height: 55vh;
+  }
+  .titulo_agradecimiento {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+    font-size: 2em;
+    font-family: "Montserrat", sans-serif;
+    color: #1d1d1d;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  #agradecimiento h2 {
+    font-size: 2em;
+    grid-row: 3;
+    grid-column: 2;
+  }
+  .divisor3 {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
   footer {
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-rows: 8vh 8vh;
+    height: 16vh;
     background-color: #030712;
     color: #ffffff;
-    display: flex;
-    flex-direction: column;
     padding-left: 10%;
     padding-right: 10%;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .links {
+    grid-row: 1;
+    grid-column: 2;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: flex-end;
     font-size: 0.8em;
+    margin: 1em;
   }
-
-  footer p {
+  .links a {
+    color: white;
+  }
+  .redes {
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .iconos_f {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    image-resolution: auto;
+  }
+  .redes img {
+    height: 2em;
+  }
+  footer h4 {
     margin-bottom: 0;
     text-align: center;
-    font-size: 0.7em;
+    font-size: 1em;
     font-family: "Overpass Mono", monospace;
+    color: white;
+    opacity: 75%;
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
+    align-items: end;
   }
 
-  footer h6 {
+  footer h5 {
+    display: flex;
+    margin-bottom: 0;
     text-align: center;
+    font-size: 1em;
+    font-family: "Overpass Mono", monospace;
+    color: white;
+    opacity: 75%;
+    grid-column: 1;
+    grid-row: 1;
+
+    justify-content: center;
+    align-items: end;
   }
 }
