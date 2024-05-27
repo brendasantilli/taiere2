@@ -323,7 +323,8 @@ footer h5 {
   justify-content: space-around;
   align-items: center;
   width: 80vw;
-  font-size: 1.4em;
+  font-size: 2em;
+  font-weight: 800;
 }
 
 .bullet_titulo img {
@@ -390,8 +391,8 @@ footer h5 {
 }
 
 .Bullets h1 {
-  font-size: 1.6em;
-  font-weight: bold;
+  font-size: 1.4em;
+  font-weight: 800;
 }
 
 .Bullets h4 {
@@ -518,6 +519,7 @@ input::placeholder {
 }
 
 .texto h1 {
+  font-family: "Montserrat", sans-serif;
   font-size: 3em;
   font-weight: 800;
   margin: 0;
@@ -556,10 +558,11 @@ input::placeholder {
   padding: 1em;
 }
 .titulo_imagen {
+  font-family: "Montserrat", sans-serif;
   display: flex;
   height: 20%;
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: white;
   white-space: normal;
   flex-direction: row;
@@ -1099,8 +1102,8 @@ footer h5 {
   }
 
   .Bullets h1 {
-    font-size: 1.6em;
-    font-weight: bold;
+    font-size: 2em;
+    font-weight: 800;
   }
 
   .Bullets h4 {
